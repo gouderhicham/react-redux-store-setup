@@ -1,15 +1,15 @@
 let initialState = {
-  gameData: {}, 
-  gameImages:{}, 
+  data1: {}, 
+  data2:{}, 
   isLoading : true
 };
-export const fetchGameData = (state = initialState, action) => {
+export const datchData = (state = initialState, action) => {
   switch (action.type) {
     case "fetchGameData":
       return {
         ...state,
-        gameData:{ ...action.payload.gameData},
-        gameImages: {...action.payload.images},
+        data1:{ ...action.payload.data},
+        data2: {...action.payload.data2},
         isLoading : false ,
       };
     case "loadGame" : 
