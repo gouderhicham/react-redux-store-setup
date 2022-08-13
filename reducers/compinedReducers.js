@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
-import { fetchGames } from "./fetchGames";
-import { fetchGameData } from "./fetchGameData";
+import { reducer1 } from "./reducer1";
+import { reducer2 } from "./reducer2";
 export const reducers = combineReducers({
-  gamesData: fetchGames,
-  gameDetails : fetchGameData
+  data_state_1: reducer1 ,
+  data_state_2 : reducer2 // no function call just it's name no () 
 });
